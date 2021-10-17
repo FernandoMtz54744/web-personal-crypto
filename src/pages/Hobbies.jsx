@@ -16,7 +16,7 @@ export default function Hobbies() {
               <h2>Escuchar música</h2>
             </div>
             <div className="hobbie cancion">
-            <iframe className="cancion" src="https://www.youtube.com/embed/j7zBBM6z4E4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="cancion" src="https://www.youtube.com/embed/kWUV5-frRU4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
         </div>

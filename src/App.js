@@ -14,7 +14,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="#myInfo">Acerca de mí</Link>
+              <Link to="/">Acerca de mí</Link>
             </li>
             <li>
               <Link to="/key">Llave pública</Link>
