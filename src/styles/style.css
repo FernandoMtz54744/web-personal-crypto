@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root{
+    --color1: #F9F7F7;
+    --color2: #DBE2EF;
+    --color3: #3F72AF;
+    --color4: #112D4E;
+    --color5: #00C6BC;
+}
+
+/* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+
+*{
+    margin: 0 0 0 0;
+    box-sizing: content-box;
+}
+
+nav{
+    background-color: var(--color4);
+    color: whitesmoke;
+    height: 8vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    color: var(--color1);
+}
+
+a:link {
+    color: var(--color1);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited  {
+    color: var(--color1);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+body{
+    background-color: var(--color1);
+    margin: 0 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+    width: 100vw;
+    overflow-x: hidden; 
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+
+.about-me{
+    height: 92vh;
+    background-color: var(--color1);
+    color: var(--color4);
+    scroll-snap-align: end;
+}
+
+.me-photo{
+    height: 40vh;
+    background-color: #112D4E;
+    border-radius: 100%;
+    box-shadow: 40px 5px var(--color3);
+}
+
+.presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+}
+
+.text-presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.text-writing{
+     height: 3rem;
+}
+
+.redes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.redes > div{
+    user-select: text;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--color4);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+.redes > div:hover{
+    background-color: var(--color1);
+    border-color: var(--color4);
+    color: var(--color4);
+    cursor: pointer;
+}
+
+.redes > div > p{
+    margin-left: 10px;
+}
+
+.contacto-text{
+    color: var(--color4);
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* .circles{
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: -40vw -10vh 0 0 var(--color3),
+                200px 2px 0 0 var(--color3),
+                300px 4px 0 0 var(--color3);
+  /* offset-x | offset-y | blur-radius | spread-radius | color 
+  }
+   */
+
+.download-key{
+    text-align: center;
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.download-key:hover{
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.Go-down{
+    background-color: var(--color4);
+    position: absolute;
+    bottom: 0px;
+    color: var(--color1);
+    width: 100vw;
+    text-align: center;
+    height: 5vh;
+    vertical-align:middle;
+    line-height: 5vh;
+    font-size: xx-large;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Personal information */
+
+.personal-information{
+    height: 100vh;
+    background-color: var(--color4);
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.title-acerca-mi{
+   margin: 2rem 0 4vh 0;
+   text-align: center;
+   color: var(--color1);
+}
+
+.academic-formation{
+    /* background-color: var(--color1); */
+    border-radius: 5px;
+    color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 60vh;
+    width: 60vw;
+    border: 2px solid var(--color5);
+    padding: 1rem;
+}
+
+.academic-formation-text{
+    text-align: justify;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.space{
+   height: 3vh;
+}
+
+.neon1{
+    color: var(--color5);
+}
+
+.lateral-img{
+    height: 100%;
+    /* height: 55vh; */
+}
+
+.download-cv{
+    text-align: center;
+    background-color: var(--color5);
+    color: var(--color4);
+    padding: 10px 0px 10px 0px;
+    margin-top: 20px;
+}
+
+.download-cv:hover{
+    background-color: var(--color1);
+    cursor: pointer;
+}
+
+.Go-down2{
+    background-color: var(--color5);
+    position: absolute;
+    bottom: -100vh;
+    color: var(--color1);
+    width: 100vw;
+    text-align: center;
+    height: 5vh;
+    vertical-align:middle;
+    line-height: 5vh;
+    font-size: xx-large;
+}
+
+/* ---------------------------------------------------------------- */
+/* Hobbies */
+.hobbie-page{
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: var(--color1);
+}
+
+.hobbies-container{
+    color: var(--color4);
+    text-align: center;
+    width: 100vw;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies-container > h1 {
+    color: var(--color4);
+}
+
+.hobbies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    width: 80vw;
+    height: 60vh;
+    margin-top: 2rem;
+    grid-auto-rows: 1fr;
+}
+
+.hobbie{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.hobbie h2{
+    position: relative;
+    color: var(--color1);
+    z-index: 1;
+}
+
+.piano::before {    
+    content: "";
+    background-image: url("https://www.wallpapertip.com/wmimgs/68-680474_piano-wallpapers-android-wallpaperhd-desktop-background-piano-wallpaper.jpg");
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    background-size: cover;
+}
+
+.piano{
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pelicula{
+    grid-column-start: 4;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pelicula::before {    
+    content: "";
+    background-image: url("https://i.pinimg.com/originals/2f/55/fb/2f55fbc8f9cafd314115e7e58136e274.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.musica{
+    grid-column-start: 3;
+    grid-column-end:6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.musica::before {    
+    content: "";
+    background-image: url("https://c0.wallpaperflare.com/preview/66/839/628/music-headphones-aesthetic-tech.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.cancion{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.Go-down3{
+    background-color: var(--color4);
+    position: absolute;
+    bottom: -200vh;
+    color: var(--color1);
+    width: 100vw;
+    height: 5vh;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+      display: none;
+    }
+  }

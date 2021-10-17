@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import MainContainer from "./containers/MainContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous"/>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="#myInfo">Acerca de mí</Link>
+            </li>
+            <li>
+              <Link to="/key">Llave pública</Link>
+            </li>
+            <li>
+              <Link to="/cv">CV</Link>
+            </li>
+            <li>
+              <Link to="/">Acerca de Criptografía</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/">
+            <MainContainer />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
