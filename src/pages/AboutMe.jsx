@@ -1,5 +1,6 @@
 import React from 'react'
 import lateralImg from "../images/Fotopersonal.jpg"
+import cv from "../res/CV-FM.pdf"
 
 export default function AboutMe() {
     return (
@@ -21,7 +22,7 @@ export default function AboutMe() {
                         tecnologías web como HTML, Jasvascript, CSS y React. Manteniendo siempre 
                         calidad en el desarrollo y un excelente trabajo en equipo.</p>
                     <div className="space"></div>
-                    <div className="download-cv">Descargar CV</div>                 
+                    <a href={cv} download="Martinez_Fernando_CV.pdf"><div className="download-cv">Descargar CV</div></a>           
                 </div>
             </div>
 

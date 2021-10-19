@@ -124,7 +124,7 @@ html{
     background-color: var(--color1);
     border-color: var(--color4);
     color: var(--color4);
-    cursor: pointer;
+    cursor: text;
 }
 
 .redes > div > p{
@@ -137,21 +137,6 @@ html{
     padding: 0.5rem;
     text-align: center;
 }
-
-/* .circles{
-    position: absolute;
-    z-index: 1;
-    opacity: 0.4;
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: -40vw -10vh 0 0 var(--color3),
-                200px 2px 0 0 var(--color3),
-                300px 4px 0 0 var(--color3);
-  /* offset-x | offset-y | blur-radius | spread-radius | color 
-  }
-   */
 
 .download-key{
     text-align: center;

@@ -5,6 +5,8 @@ import {
   Link
 } from "react-router-dom";
 import MainContainer from "./containers/MainContainer";
+import cv from "../src/res/CV-FM.pdf"
+import AcercaCrypto from "./pages/AcercaCrypto";
 
 function App() {
   return (
@@ -14,23 +16,26 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Acerca de mí</Link>
+              <Link to="/">Main</Link>
             </li>
             <li>
               <Link to="/key">Llave pública</Link>
             </li>
             <li>
-              <Link to="/cv">CV</Link>
+              <a href={cv} download="Martinez_Fernando_CV.pdf">CV</a>
             </li>
             <li>
-              <Link to="/">Acerca de Criptografía</Link>
+              <Link to="/AcercaCryptografia">Acerca de Criptografía</Link>
             </li>
           </ul>
         </nav>
 
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <MainContainer />
+          </Route>
+          <Route exact path="/AcercaCryptografia">
+            <AcercaCrypto/>
           </Route>
         </Switch>
       </div>
