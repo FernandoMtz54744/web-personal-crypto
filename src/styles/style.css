@@ -371,6 +371,43 @@ iframe{
     line-height: 5vh;
 }
 
+/* ------------------------------------------------------------- */
+/* Historia */
+
+.acerca-crypto{
+    padding: 2rem 6rem 1rem 6rem;
+    text-align: justify;
+}
+
+.acerca-text > p{
+    margin-bottom: 2vh;
+}
+
+.acerca-crypto > h1, .acerca-crypto > h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color4);
+}
+
+.acerca-contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-container{
+    margin-left: 4rem;
+    text-align: center;
+}
+
+.imagen-container > img{
+    height: 400px;
+}
+
+.acerca-text ul {
+    user-select: text;
+}
+
+
 @media only screen and (max-width: 600px) {
     html {
       display: none;

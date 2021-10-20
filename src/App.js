@@ -16,7 +16,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Main</Link>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
               <Link to="/key">Llave pública</Link>
