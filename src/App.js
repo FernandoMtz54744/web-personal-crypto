@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import MainContainer from "./containers/MainContainer";
 import cv from "../src/res/CV-FM.pdf"
+import pk from "../src/res/Public_Key_Fernando.pem";
 import AcercaCrypto from "./pages/AcercaCrypto";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="/key">Llave pública</Link>
+            <a href={pk} download="Public_Key_Fernando.pem">Llave pública</a>
             </li>
             <li>
               <a href={cv} download="Martinez_Fernando_CV.pdf">CV</a>

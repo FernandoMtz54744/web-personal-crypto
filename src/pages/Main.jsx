@@ -1,6 +1,7 @@
 import React from "react";
 import me from "../images/me-transparent.png";
 import TypeWriterEffect from "react-typewriter-effect";
+import pk from "../res/Public_Key_Fernando.pem";
 
 export default function Main() {
   return (
@@ -22,7 +23,7 @@ export default function Main() {
                     {/* <h4>!Hola! Mi nombre es</h4> */}
                     <h1>Fernando Martinez Martinez</h1>
                     <h3>Estudiante de ESCOM</h3>
-                    <div className="download-key">Descargar llave pública</div>
+                    <a href={pk} download="Public_Key_Fernando.pem"><div className="download-key">Descargar llave pública</div></a>
                 </div>
             </div>
 
@@ -32,7 +33,7 @@ export default function Main() {
 
         <div className="redes-container">
             <div className="contacto-text">
-                Infromación de contacto
+                Información de contacto
             </div>
             <div className="redes">
                 <div><i className="fas fa-envelope"></i><p>fer_f@outlook.com</p></div>
